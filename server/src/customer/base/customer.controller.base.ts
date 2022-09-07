@@ -27,7 +27,7 @@ import { CustomerWhereUniqueInput } from "./CustomerWhereUniqueInput";
 import { CustomerFindManyArgs } from "./CustomerFindManyArgs";
 import { CustomerUpdateInput } from "./CustomerUpdateInput";
 import { Customer } from "./Customer";
-@swagger.ApiBasicAuth()
+@swagger.ApiBearerAuth()
 @common.UseGuards(defaultAuthGuard.DefaultAuthGuard, nestAccessControl.ACGuard)
 export class CustomerControllerBase {
   constructor(
