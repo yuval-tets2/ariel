@@ -1,3 +1,5 @@
+import { JsonValue } from "type-fest";
+
 export type User = {
   id: string;
   createdAt: Date;
@@ -5,5 +7,5 @@ export type User = {
   firstName: string | null;
   lastName: string | null;
   username: string;
-  roles: Array<string>;
+  roles: JsonValue;
 };
